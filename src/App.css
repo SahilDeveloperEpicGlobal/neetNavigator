@@ -69,20 +69,30 @@
   color: #000;
 }
 .section3 h3 {
-  margin: 45px 0 10px;
+  margin: 18px 0 10px;
   font-size: 26px;
 }
-.section3 label {
-  font-size: 24px;
-  font-weight: 600;
-  padding-bottom: 5px;
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiTableContainer-root.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+  width: 850px;
+}
+.css-1ex1afd-MuiTableCell-root {
+  width: 0px;
+  border: none !important;
+  color: #fff !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+.css-1ygcj2i-MuiTableCell-root {
+  border: none !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  color: #fff !important;
 }
 .section3 input {
   outline: none;
-  border: 1px solid #858484;
   width: 350px;
-  padding: 12px 16px;
-  margin-bottom: 20px;
+  /* padding: 5px 16px; */
+  margin-bottom: 0px;
   border-radius: 26px;
 }
 .section3 input::placeholder {
@@ -101,9 +111,13 @@
 .section3 form {
   display: grid;
 }
+.section3 h3.lefttext {
+  padding-left: 20px;
+  font-size: 22px;
+}
 .section3 p {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 .section3 input[type="submit"] {
   width: 340px;
@@ -113,8 +127,10 @@
   outline: none;
   border-radius: 50px;
   cursor: pointer;
+  margin-top: 30px;
   color: #fff;
   background-color: #1366ce;
+  margin-left: 20px;
 }
 .section3 p.markpara {
   font-size: 18px;
@@ -210,17 +226,31 @@
   border-top-right-radius: 15px;
   background-color: #1366ce;
 }
+.css-quj9j6-MuiTable-root {
+  background-color: black;
+}
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
   max-width: 850px;
-  border: 1px solid #1366ce;
 }
 th {
   border: 1px solid #1366ce;
   color: #1366ce;
   font-weight: 700;
+}
+.css-177gid-MuiTableCell-root {
+  border: none !important;
+  color: #fff !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+.css-1azl6jz-MuiTableCell-root {
+  border: none !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  color: #fff !important;
 }
 td {
   border: 1px solid #1366ce;
@@ -267,7 +297,7 @@ table.countrynest1 {
 }
 .cartsummary {
   border: 1px solid #00000029;
-  width: 45%;
+  width: 50%;
   padding: 15px;
 }
 .maincart {
@@ -604,4 +634,16 @@ table.countrynest1 {
   font-size: 13px;
   color: #fff;
   font-weight: 600;
+}
+.MuiFormControl-root.MuiTextField-root.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  border-radius: 60px;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 60px;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiAutocomplete-inputRoot.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 60px;
+  width: 385px;
 }
