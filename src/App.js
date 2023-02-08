@@ -4,7 +4,10 @@
 /* eslint-disable jsx-a11y/alt-text */
 import "./App.css";
 import TwitterIcon from '@mui/icons-material/Twitter';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
 import { Link } from "@mui/material";
@@ -47,10 +50,10 @@ function App() {
     </div>
     <div className="socialicon">
       <ul>
-      <li><TwitterIcon /></li>
-      <li><InstagramIcon /></li>
-      <li><FacebookIcon /></li>
-      <li><YouTubeIcon /></li>
+      <li><Link href={"#"}><a><TwitterIcon /></a></Link></li>
+      <li><Link href={"#"}><a><InstagramIcon /></a></Link></li>
+      <li><Link href={"#"}><a><FacebookIcon /></a></Link></li>
+      <li><Link href={"#"}><a><YouTubeIcon /></a></Link></li>
       </ul>
     </div>
    </div> 
@@ -300,32 +303,32 @@ function App() {
     <h3>Cart Summary</h3>
 <ul>
   <li> <input type={"radio"} />
-  All states </li><li>ufgdu</li>
+  All states </li><li>₹499</li>
 </ul>
 <ul>
   <li> <input type={"radio"} />
   1 state</li>
- <li>ufgdu</li>
+ <li>₹199</li>
 </ul>
 <ul>
   <li> <input type={"radio"} />
   2 state</li>
- <li>ufgdu</li>
+ <li>₹299</li>
 </ul>
 <ul>
   <li> <input type={"radio"} />
   2 marks</li>
- <li>ufgdu</li>
+ <li>₹699</li>
 </ul>
 <ul>
   <li> <input type={"radio"} />
   4 marks</li>
- <li>ufgdu</li>
+ <li>₹899</li>
 </ul>
 <ul>
   <li className="subtotal">
   SUBTOTAL</li>
- <li>ufgdu</li>
+ <li className="subtotal1">₹499</li>
 </ul>
 <button>Checkout</button>
   </div>
@@ -333,10 +336,85 @@ function App() {
     <p>In order to find out which colleges accept applicants with good credit scores, you should contact each school directly to inquire about their admissions policies and what kind of credit score they look for. Additionally, you can look for colleges that are known for being “credit friendly,” which means that they don’t require a credit check as part of their admissions process. Finally, you can research scholarship and grant programs that are specifically designed for students with good credit scores.</p>
   </div>
   <div className="summarygraph">
-    fsdafcxersdadfc
+  <ul>
+    <li><div class="progress">
+  <div class="progress_inner"></div>
+</div></li>
+    <li>
+    <div class="progress">
+  <div class="progress_inner"></div>
+</div>
+    </li>
+    <li>
+    <div class="progress">
+  <div class="progress_inner"></div>
+</div>
+    </li>
+  </ul>
+  <div className="collegelocator">
+    <ul>
+      <li><span>0</span>Government Colleges</li>
+      <li><span>0</span>Private College</li>
+      <li><span>0</span>Deemed Colleges</li>
+      
+    </ul>
+  </div>
   </div>
   </div>
 </div>
+</div>
+
+<div className="footer">
+  <div className="container">
+    <div className="mainfooter">
+      <div className="footer1">
+      <img src="/image/blue-logo-final 1.png" />
+      <p>NEET NAVIGATOR started in 2019 with advisory and training services to institutional clients and in 2021 NEET NAVIGATOR launched the personalized counselling services for students/parents. </p>
+      <h2>Address</h2>
+      <p>G-22/30, GF, Sector 7,
+Rohini, Delhi – 110085</p>
+<h2>Connect with us</h2>
+ <ul>
+      <li className="emailicon"><Link href={"#"}><a><EmailIcon /></a></Link></li>
+      <li className="whatsappicon"><Link href={"#"}><a><WhatsAppIcon /></a></Link></li>
+      <li className="facebookicon"><Link href={"#"}><a><FacebookIcon /></a></Link></li>
+      <li className="linkednicon"><Link href={"#"}><a><LinkedInIcon /></a></Link></li>
+      <li className="instaicon"><Link href={"#"}><a><InstagramIcon /></a></Link></li>
+      <li className="twittericon"><Link href={"#"}><a><TwitterIcon /></a></Link></li>
+ </ul>
+
+      </div>
+      <div className="footer2">
+        <h2>Important leads</h2>
+        <ul>
+        <li><Link href={"#"}><a>About Us</a></Link></li>
+        <li><Link href={"#"}><a>College predictor</a></Link></li>
+        <li><Link href={"#"}><a>About Medical colleges</a></Link></li>
+        <li><Link href={"#"}><a>Medical Admission Counselling</a></Link></li>
+        <li><Link href={"#"}><a>Success Stories</a></Link></li>
+        <li><Link href={"#"}><a>Blogs</a></Link></li>
+        <li><Link href={"#"}><a>Contact us</a></Link></li>
+        </ul>
+      </div>
+      <div className="footer3">
+      <h2>Our Services</h2>
+        <ul>
+        <li><Link href={"#"}><a>Service1</a></Link></li>
+        <li><Link href={"#"}><a>Service1</a></Link></li>
+        <li><Link href={"#"}><a>Service1</a></Link></li>
+        <li><Link href={"#"}><a>Service1</a></Link></li>
+        <li><Link href={"#"}><a>Service1</a></Link></li>
+        <li><Link href={"#"}><a>Service1</a></Link></li>
+        <li><Link href={"#"}><a>Service1</a></Link></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div className="lastfooter">
+  <div className="container">
+    <h3>© Copyright - NEET Navigator Educational Services </h3>
+  </div>
 </div>
     </> 
   );

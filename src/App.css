@@ -192,6 +192,9 @@
   font-weight: 600;
   padding-bottom: 12px;
 }
+.socialicon ul li a {
+  color: #000;
+}
 .neetable ul li.heading {
   font-size: 20px;
   font-weight: 700;
@@ -263,11 +266,9 @@ table.countrynest1 {
   cursor: pointer;
 }
 .cartsummary {
-  border: 1px solid #000;
+  border: 1px solid #00000029;
   width: 45%;
   padding: 15px;
-}
-.maincart1 {
 }
 .maincart {
   display: flex;
@@ -276,6 +277,31 @@ table.countrynest1 {
 .maincart {
   display: flex;
 }
+.section6 {
+  margin-top: 60px;
+}
+.cartsummary h3 {
+  margin: 0 0 18px;
+}
+.section6 button {
+  padding: 14px 55px;
+  border-radius: 26px;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  border: 1px solid #1366ce;
+  background-color: #1366ce;
+  display: block;
+}
+
+.cartsummary ul li.subtotal {
+  padding-left: 26px;
+  font-weight: 700;
+}
+.cartsummary ul li.subtotal1 {
+  color: #1366ce;
+}
 .summarycontent {
   width: 100%;
   margin-left: 50px;
@@ -283,4 +309,299 @@ table.countrynest1 {
 }
 .summarygraph {
   width: 55%;
+}
+.mainfooter {
+  display: flex;
+  justify-content: space-around;
+}
+.footer1 p:nth-child(4) {
+  max-width: 210px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.footer1 p {
+  margin: 0;
+  font-weight: 400;
+  width: 400px;
+  color: #a0a0a0;
+  line-height: 24px;
+  font-size: 16px;
+}
+.footer1 ul {
+  display: flex;
+  padding: 0;
+}
+.footer1 ul li {
+  padding-left: 10px;
+  list-style: none;
+}
+.footer1 ul li.emailicon a {
+  color: #ea4335;
+}
+.footer1 ul li.whatsappicon a {
+  color: #25d366;
+}
+.footer1 ul li.facebookicon a {
+  color: #1877f2;
+}
+.footer1 ul li.linkednicon a {
+  color: #0a66c2;
+}
+.footer1 ul li.instaicon a {
+  color: #e4405f;
+}
+.footer1 ul li.twittericon a {
+  color: #1da1f2;
+}
+.footer2 ul li {
+  list-style: none;
+  padding-bottom: 16px;
+}
+
+.footer2 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer2 ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #a0a0a0;
+}
+.footer3 ul li {
+  list-style: none;
+  padding-bottom: 16px;
+}
+
+.footer3 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer3 ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #a0a0a0;
+}
+.footer {
+  background-color: #f9f9f9;
+  margin-top: 40px;
+}
+.lastfooter {
+  background-color: #d9d9d9;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.lastfooter h3 {
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+}
+.summarygraph ul li:nth-child(2) .progress .progress_inner {
+  /* background-color: #eb001b !important; */
+  width: 50%;
+}
+.summarygraph ul li:nth-child(3) .progress .progress_inner {
+  /* background-color: #ff6584 !important; */
+  width: 40%;
+}
+.collegelocator {
+  margin-top: 130px;
+}
+
+.collegelocator ul {
+  display: block !important;
+  margin: 0 auto;
+}
+.collegelocator ul li {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.collegelocator ul li:nth-child(1) span {
+  background-color: #f37c20;
+  border-color: #f37c20;
+}
+.collegelocator ul li:nth-child(2) span {
+  background-color: #eb001b;
+  border-color: #eb001b;
+}
+.collegelocator ul li:nth-child(1) {
+  color: #f37c20;
+  font-weight: 600;
+}
+.collegelocator ul li:nth-child(3) span {
+  background-color: #ff6584;
+  border-color: #ff6584;
+}
+.collegelocator ul li:nth-child(2) {
+  color: #eb001b;
+  font-weight: 600;
+  margin-right: 46px;
+}
+.collegelocator ul li:nth-child(3) {
+  margin-right: 30px;
+  color: #ff6584;
+  font-weight: 600;
+}
+.collegelocator ul li span {
+  border: 1px solid #000;
+  padding: 0px 8px;
+  color: transparent;
+  position: relative;
+  left: -10px;
+}
+.progress {
+  width: 265px;
+  height: 2.5rem;
+  transform: rotate(270deg);
+  position: relative;
+  background: #d9d9d9;
+  border: 1px solid #d9d9d9;
+  margin-top: 80px;
+  left: 100px;
+  margin-left: -170px;
+  border-left: 4px solid #000;
+}
+.summarygraph ul {
+  display: flex;
+}
+.summarygraph ul li:nth-child(1) .progress .progress_inner::before {
+  content: "";
+  background-image: url(../public/image/Vector35.png);
+  position: absolute;
+  top: -80px;
+  left: 80px;
+  right: 0px;
+  background-repeat: no-repeat;
+  bottom: 0px;
+  transform: rotate(90deg);
+  height: 200px;
+  width: 40px;
+}
+.summarygraph ul li:nth-child(2) .progress .progress_inner::before {
+  content: "";
+  background-image: url(../public/image/Vecto36.png);
+  position: absolute;
+  top: -65px;
+  left: 65px;
+  right: 0px;
+  background-repeat: no-repeat;
+  bottom: 0px;
+  transform: rotate(90deg);
+  height: 170px;
+  width: 40px;
+}
+.summarygraph ul li:nth-child(3) .progress .progress_inner::before {
+  content: "";
+  background-image: url(../public/image/Vector37.png);
+  position: absolute;
+  top: -40px;
+  left: 40px;
+  right: 0px;
+  background-repeat: no-repeat;
+  bottom: 0px;
+  transform: rotate(90deg);
+  height: 120px;
+  width: 40px;
+}
+.summarygraph ul li {
+  list-style: none;
+}
+.progress .progress_inner {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  /* background-color: #f37c20 !important; */
+  background: -webkit-linear-gradient(
+    left,
+    #06b025 0%,
+    #06b025 30%,
+    #5faf6c 45%,
+    #c5ddc6 50%,
+    #5faf6c 60%,
+    #06b025 70%,
+    #06b025 100%
+  );
+  background: linear-gradient(
+    left,
+    #06b025 0%,
+    #06b025 30%,
+    #5faf6c 45%,
+    #c5ddc6 50%,
+    #5faf6c 60%,
+    #06b025 70%,
+    #06b025 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 1000px 100%;
+  display: inline-block;
+  position: relative;
+  -webkit-animation-duration: 5.25s;
+  animation-duration: 5.25s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+/* for input :v */
+.change {
+  width: 50px;
+}
+.summarygraph ul li:nth-child(1) .progress .progress_inner::after {
+  content: "400 Colleges";
+  position: absolute;
+  left: 6px;
+  right: 0px;
+  top: 5px;
+  bottom: 0;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 600;
+}
+.summarygraph ul li:nth-child(2) .progress .progress_inner::after {
+  content: "300 Colleges";
+  position: absolute;
+  left: 6px;
+  right: 0px;
+  top: 8px;
+  bottom: 0;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 600;
+}
+.summarygraph ul li:nth-child(3) .progress .progress_inner::after {
+  content: "300 Colleges";
+  position: absolute;
+  left: 6px;
+  right: 0px;
+  top: 10px;
+  bottom: 0;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
 }
