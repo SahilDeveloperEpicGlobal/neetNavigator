@@ -47,39 +47,39 @@ function App() {
         <div className="mainmenu">
           <ul>
             <li>
-              <Link href="youtube.com">
+              <Link href={"#"}>
                 <a className="active">Home</a>
               </Link>
             </li>
             <li>
-              <Link href="youtube.com">
+              <Link href={"#"}>
                 <a>Overview</a>
               </Link>
             </li>
             <li>
               {" "}
-              <Link href="youtube.com">
+              <Link href={"#"}>
                 <a>Team</a>
               </Link>
             </li>
             <li>
               {" "}
-              <Link href="youtube.com">
+              <Link href={"#"}>
                 <a>Services</a>
               </Link>
             </li>
             <li>
-              <Link href="youtube.com">
+              <Link href={"#"}>
                 <a>Courses</a>
               </Link>
             </li>
             <li>
-              <Link href="youtube.com">
+              <Link href={"#"}>
                 <a>Blogs</a>
               </Link>
             </li>
             <li>
-              <Link href="youtube.com">
+              <Link href={"#"}>
                 <a>Contact</a>
               </Link>
             </li>
