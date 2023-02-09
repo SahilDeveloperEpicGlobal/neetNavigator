@@ -10,11 +10,16 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Paper from "@mui/material/Paper";
+import Checkbox from "../src/components/checkbox/index";
+import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 
 import {
   Autocomplete,
+  // Checkbox,
+  FormControlLabel,
   Grid,
   Link,
+  RadioGroup,
   Table,
   TableBody,
   TableCell,
@@ -25,9 +30,13 @@ import {
 } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Container } from "@mui/system";
-
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
+import { Label } from "@mui/icons-material";
+import Header from "./components/header";
+import GraphSidebar from "./components/graphsidebar";
+// import { Checkbox } from "@mui/material";
+// import Checkbox from "@mui/material/Checkbox";
+function createData(name, calories, fat, carbs) {
+  return { name, calories, fat, carbs };
 }
 
 const rows = [
@@ -35,94 +44,44 @@ const rows = [
   createData("Ice cream sandwich", 237, 9.0, 37),
   createData("Eclair", 262, 16.0, 24),
   createData("Cupcake", 305, 3.7, 67),
-  createData("Gingerbread", 356, 16.0, 49),
+];
+const label = { inputProps: { "aria-label": "Checkbox demo" } };
+
+const Coloumn = [
+  { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
+  { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
+  { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
+  { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
+  { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
+  { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
+  { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
+  { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
+  { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
+]
+
+const rowsNew = [
+  { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
+  { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
+  { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
+  { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
+  { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
+  { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
+  { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
+  { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
+  { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
 ];
 function App() {
   return (
     <>
-      <div className="mainheader">
-        <div className="logo">
-          <img src="/image/blue-logo-final 1.png" />
-        </div>
-        <div className="mainmenu">
-          <ul>
-            <li>
-              <Link href={"#"}>
-                <a className="active">Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href={"#"}>
-                <a>Overview</a>
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link href={"#"}>
-                <a>Team</a>
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link href={"#"}>
-                <a>Services</a>
-              </Link>
-            </li>
-            <li>
-              <Link href={"#"}>
-                <a>Courses</a>
-              </Link>
-            </li>
-            <li>
-              <Link href={"#"}>
-                <a>Blogs</a>
-              </Link>
-            </li>
-            <li>
-              <Link href={"#"}>
-                <a>Contact</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="socialicon">
-          <ul>
-            <li>
-              <Link href={"#"}>
-                <a>
-                  <TwitterIcon />
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href={"#"}>
-                <a>
-                  <InstagramIcon />
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href={"#"}>
-                <a>
-                  <FacebookIcon />
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href={"#"}>
-                <a>
-                  <YouTubeIcon />
-                </a>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+     <Header />
       {/* <div className="section2">
     <h1>650</h1>
     <h1>Number of Medical </h1>
     <h1>colleges in <strong>India</strong></h1>
    </div> */}
+
+     
+
       <Container>
         <Grid container spacing={10}>
           <Grid item xs={12} className="section2">
@@ -347,95 +306,83 @@ function App() {
               been accepted into
             </p>
           </Grid>
+
+          {/* WITH CHECKBOX */}
+
           <Grid item xs={12} className="section5">
-            <h2>College List</h2>
-            <table>
-              <tr>
-                <th>State</th>
-                <th>No. of College</th>
-                <th className="countrynest3">
-                  Select the Colleges
-                  <table className="countrynest2">
-                    <tr>
-                      <th>
-                        <input type={"checkbox"} />
-                      </th>
-                      <th>Gov.</th>
-                      <th>Pvt.</th>
-                      <th>Dem.</th>
-                    </tr>
-                  </table>
-                </th>
-              </tr>
-              <tr>
-                <td>Punjab</td>
-                <td>30 College</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td className="countrynest">
-                        {" "}
-                        <input type={"checkbox"} />
-                      </td>
-                      <td className="countrynest">34</td>
-                      <td className="countrynest">56</td>
-                      <td className="countrynest">23</td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>Bangalore</td>
-                <td>78 College</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td className="countrynest">
-                        {" "}
-                        <input type={"checkbox"} />
-                      </td>
-                      <td className="countrynest">34</td>
-                      <td className="countrynest">56</td>
-                      <td className="countrynest">23</td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>Bhopal</td>
-                <td>45 College</td>
-                <td>
-                  <table>
-                    <tr>
-                      <td className="countrynest">
-                        {" "}
-                        <input type={"checkbox"} />
-                      </td>
-                      <td className="countrynest">34</td>
-                      <td className="countrynest">56</td>
-                      <td className="countrynest">23</td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>Haryana</td>
-                <td>19 College</td>
-                <td>
-                  <table className="countrynest1">
-                    <tr>
-                      <td className="countrynest">
-                        {" "}
-                        <input type={"checkbox"} />
-                      </td>
-                      <td className="countrynest">34</td>
-                      <td className="countrynest">56</td>
-                      <td className="countrynest">23</td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
+            <h2>Test List</h2>
+            <TableContainer component={Paper}>
+              <Table
+                sx={{ minWidth: 650 }}
+                size="small"
+                aria-label="a dense table"
+              >
+                <TableHead>
+                  <TableRow>
+                    <TableCell>State</TableCell>
+                    <TableCell align="right">No. of College</TableCell>
+                    <TableCell align="right" className="selection">
+                      {" "}             
+                      Select the Colleges
+                      <TableBody>
+                        <TableRow className="select">
+                          
+                          <TableCell>
+                          <span>
+
+<Checkbox />      
+</span>
+                          </TableCell>
+                          <TableCell>
+                          Gov.
+                          </TableCell>
+                          <TableCell>
+                          Pvt.
+                          </TableCell>
+                          <TableCell>
+                          Dem.
+                          </TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {Array.from({ length: 4 }).map((_, index) => (
+                    <TableRow
+                      key={index}
+                      sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                    >
+                      <TableCell component="td" scope="row">
+                        {`row.name`}
+                      </TableCell>
+                      <TableCell align="right">{`row.calories cdv df`}</TableCell>
+                      <TableBody>
+                        <TableRow>
+                          
+                          <TableCell>
+                          <span>
+
+<Checkbox />      
+</span>
+                          </TableCell>
+                          <TableCell>
+                          34
+                          </TableCell>
+                          <TableCell>
+                          56
+                          </TableCell>
+                          <TableCell>
+                         23
+                          </TableCell>
+                        </TableRow>
+                      </TableBody>
+                    
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
           </Grid>
           <Grid item xs={12} className="section6">
             <div className="maincart">
@@ -496,37 +443,8 @@ function App() {
                   with good credit scores.
                 </p>
               </div>
-              <div className="summarygraph">
-                <ul>
-                  <li>
-                    <div class="progress">
-                      <div class="progress_inner"></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="progress">
-                      <div class="progress_inner"></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="progress">
-                      <div class="progress_inner"></div>
-                    </div>
-                  </li>
-                </ul>
-                <div className="collegelocator">
-                  <ul>
-                    <li>
-                      <span>0</span>Government Colleges
-                    </li>
-                    <li>
-                      <span>0</span>Private College
-                    </li>
-                    <li>
-                      <span>0</span>Deemed Colleges
-                    </li>
-                  </ul>
-                </div>
+              <div>
+             <GraphSidebar />
               </div>
             </div>
           </Grid>
