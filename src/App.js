@@ -7,6 +7,8 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import EmailIcon from "@mui/icons-material/Email";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Paper from "@mui/material/Paper";
@@ -79,11 +81,14 @@ function App() {
     <h1>Number of Medical </h1>
     <h1>colleges in <strong>India</strong></h1>
    </div> */}
-
-     
-
+    <div>
+      <button  area-label="menu-icon" onClick={onClickManu}>
+      <MenuIcon size={30}/><p>Menue</p> </button>
+    </div>
       <Container>
-        <Grid container spacing={10}>
+     <div className="mainsection">
+     <div className="section1">
+      <Grid container spacing={10}>
           <Grid item xs={12} className="section2">
             <h1 style={{ textAlign: "center" }}>650</h1>
             <h1 style={{ textAlign: "center" }}>Number of Medical </h1>
@@ -149,8 +154,6 @@ function App() {
                 </Link>
               </li>
             </ul>
-          </Grid>
-          <Grid item xs={4} className="section3">
             <h3>2. Enter your Domicile</h3>
             <h3 className="lefttext">[Senior Secondary] 12th Passing State</h3>
             <Autocomplete
@@ -256,6 +259,7 @@ function App() {
             <p>Your estimated rank between 1 lakh to 1,50 lakh</p>
             <input type={"submit"} value={"Calculate your score"}></input>
           </Grid>
+         
           <Grid item xs={12} className="section4">
             <p>
               A college availability graph can be used to measure the
@@ -306,10 +310,78 @@ function App() {
               been accepted into
             </p>
           </Grid>
+          <div className="section5">
+          <h2>Test List</h2>
+           <table>
+            <tr>
+            <th>State</th>
+            <th>No. of College</th>
+            <th>
+            <h3>Select the Colleges</h3>
+              <table className="collegetable">
+                <tr>
+                  <th><input type="checkbox" /></th>
+                <th>Gov.</th>
+                <th>Pvt.</th>
+                <th>Dem.</th>
+                </tr>
+              </table>
+            </th>
+            </tr>
+            <tr>
+              <td>Punjab</td>
+              <td>30 College</td>
+              <td>
+              <table className="collegetable">
+                <tr>
+                  <td><input type="checkbox" /></td>
+             <td>34</td>
+             <td>56</td>
+             <td>23</td>
+                </tr>
+              </table>
+              </td>
+            </tr>
+            <tr>
+            <td>Bangalore</td>
+              <td>78 College</td>
+              <td>    <table className="collegetable">
+                <tr>
+                <td><input type="checkbox" /></td>
+             <td>34</td>
+             <td>56</td>
+             <td>23</td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+            <td>Bhopal</td>
+              <td>45 College</td>
+              <td>    <table className="collegetable">
+                <tr>
+                <td><input type="checkbox" /></td>
+             <td>34</td>
+             <td>56</td>
+             <td>23</td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+            <td>Haryana</td>
+              <td>19 College</td>
+              <td>    <table className="collegetable">
+                <tr>
+                <td><input type="checkbox" /></td>
+             <td>34</td>
+             <td>56</td>
+             <td>23</td>
+                </tr>
+              </table></td>
+            </tr>
+           </table>
+          </div>
 
-          {/* WITH CHECKBOX */}
-
-          <Grid item xs={12} className="section5">
+          {/* <Grid item xs={12} className="section5">
             <h2>Test List</h2>
             <TableContainer component={Paper}>
               <Table
@@ -383,10 +455,10 @@ function App() {
                 </TableBody>
               </Table>
             </TableContainer>
-          </Grid>
+          </Grid> */}
           <Grid item xs={12} className="section6">
-            <div className="maincart">
-              <div className="cartsummary">
+            <div className="lastsection">
+            <div className="cartsummary">
                 <h3>Cart Summary</h3>
                 <ul>
                   <li>
@@ -430,7 +502,7 @@ function App() {
                 </ul>
                 <button>Checkout</button>
               </div>
-              <div className="summarycontent">
+               <div className="summarycontent">
                 <p>
                   In order to find out which colleges accept applicants with
                   good credit scores, you should contact each school directly to
@@ -443,12 +515,14 @@ function App() {
                   with good credit scores.
                 </p>
               </div>
-              <div>
-             <GraphSidebar />
-              </div>
             </div>
           </Grid>
         </Grid>
+      </div>
+      <div className="section20">
+      <GraphSidebar />
+      </div>
+     </div>
       </Container>
       <div className="footer">
         <div className="container">

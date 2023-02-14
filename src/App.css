@@ -25,6 +25,7 @@
   text-decoration: none;
   color: #808396;
   font-weight: 500;
+  font-family: sans-serif;
   font-size: 16px;
 }
 .mainmenu ul li a.active {
@@ -32,12 +33,13 @@
 }
 .section2 {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 80px !important;
+  padding-top: 0px !important;
 }
 .section2 h1 {
   font-size: 60px;
+  font-family: sans-serif;
   margin: 0;
-  font-family: inherit;
   font-weight: 700;
 }
 .section2 h1 strong {
@@ -54,16 +56,20 @@
 .section3 h1 {
   color: #858484;
   font-size: 26px;
+  font-family: sans-serif;
   font-weight: 600;
 }
 .section3 h1 {
   color: #858484;
   font-size: 26px;
+  font-family: sans-serif;
   font-weight: 600;
 }
 .section3 h2 {
   font-size: 32px;
   margin: 0;
+  font-family: sans-serif;
+  max-width: 850px;
 }
 .section3 h2 a {
   color: #000;
@@ -71,6 +77,7 @@
 .section3 h3 {
   margin: 18px 0 10px;
   font-size: 26px;
+  font-family: sans-serif;
 }
 .section4 .css-11reh94-MuiGrid-root > .MuiGrid-item {
   margin-top: 80px;
@@ -119,6 +126,7 @@
 .section3 h3.lefttext {
   padding-left: 20px;
   font-size: 22px;
+  font-family: sans-serif;
 }
 .section3 p {
   margin: 0;
@@ -164,6 +172,7 @@
 .section3 ul {
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   width: 430px;
   margin: 0;
   justify-content: space-between;
@@ -173,6 +182,7 @@
 }
 .section3 h3.lastinput {
   margin: 5px 0px 0;
+  font-family: sans-serif;
 }
 .section3 ul li a {
   color: #1366ce !important;
@@ -183,10 +193,12 @@
 .section4 p {
   max-width: 820px;
   font-weight: 500;
+  font-family: sans-serif;
 }
 .section4 h2 {
   text-align: center;
   max-width: 848px;
+  font-family: sans-serif;
   border: 1px solid #1366ce;
   color: #fff;
   border-top-left-radius: 15px;
@@ -229,6 +241,7 @@
   margin-bottom: 0;
   padding: 15px 0px;
   border-top-right-radius: 15px;
+  font-family: sans-serif;
   background-color: #1366ce;
 }
 .section4 .css-quj9j6-MuiTable-root {
@@ -257,16 +270,22 @@ th {
   font-size: 16px !important;
   color: #fff !important;
 }
+.section5 .collegetable {
+  max-width: 300px;
+}
+
 td {
-  border: 1px solid #e0e0;
+  border: 1px solid #000;
   text-align: center;
   width: 0px;
   padding: 8px;
   color: #000;
   font-weight: 700;
 }
-.section5 table table.countrynest2 {
-  margin-top: 12px;
+.section5 {
+  width: 50%;
+  position: relative;
+  left: 80px;
 }
 table tr th input[type="checkbox"] {
   cursor: pointer;
@@ -302,18 +321,17 @@ table.countrynest1 {
 }
 .cartsummary {
   border: 1px solid #00000029;
-  width: 50%;
+  width: 80%;
   padding: 15px;
 }
 .maincart {
   display: flex;
   justify-content: space-between;
 }
-.maincart {
-  display: flex;
-}
 .section6 {
   margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
 }
 .cartsummary h3 {
   margin: 0 0 18px;
@@ -342,42 +360,19 @@ table.countrynest1 {
   margin-left: 50px;
   margin-right: 20px;
 }
+.summarycontent p {
+  max-width: 450px;
+}
 .summarygraph {
-  width: 30%;
-  position: fixed;
-  right: 0;
-  top: 100px;
+  width: 100%;
+}
+.lastsection {
+  display: flex;
 }
 .mainfooter {
   display: flex;
   justify-content: space-around;
-}
-.section5 {
-  padding-top: 0 !important;
-}
-.section5 th {
-  width: 0px;
-  font-size: 16px;
-  color: #1366ce;
-  font-weight: 700;
-  padding-top: 40px;
-  border: 1px solid #e0e0e0;
-  text-align: center;
-}
-.section5 th.selection {
-  padding-top: 0;
-  border-bottom: 1px solid #000;
-}
-.section5 td {
-  font-weight: 700;
-  text-align: center;
-}
-.section5 .css-11xur9t-MuiPaper-root-MuiTableContainer-root {
-  width: 650px;
-}
-.section5 .css-34nofg-MuiTableRow-root:last-child td,
-.css-34nofg-MuiTableRow-root:last-child th {
-  border: 1px solid #e0e0;
+  flex-wrap: wrap;
 }
 .footer1 p:nth-child(4) {
   max-width: 210px;
@@ -473,13 +468,22 @@ table.countrynest1 {
 .collegelocator {
   margin-top: 130px;
 }
-
+.css-1oqqzyl-MuiContainer-root {
+  max-width: 1400px !important;
+}
+.mainsection {
+  display: flex;
+}
+.section20 {
+  position: sticky;
+  top: 0;
+  height: 0;
+}
 .collegelocator ul {
   display: block !important;
   margin: 0 auto;
   position: relative;
-  left: 70px;
-  width: 230px;
+  left: 20px;
 }
 .collegelocator ul li {
   text-align: center;
@@ -687,4 +691,83 @@ table.countrynest1 {
 .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiAutocomplete-inputRoot.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root {
   border-radius: 60px;
   width: 385px;
+}
+
+@media (max-width: 500px) {
+  .section2 h1 strong {
+    font-size: 30px;
+  }
+  .section2 h1 {
+    font-size: 30px;
+  }
+  .section4
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiTableContainer-root.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+    width: 345px;
+  }
+  .summarygraph {
+    position: static;
+  }
+  .section3 ul {
+    max-width: 350px;
+  }
+  .mainfooter {
+    justify-content: flex-start;
+    padding-left: 12px;
+  }
+  .footer1 p {
+    max-width: 360px;
+  }
+  .section3 input {
+    width: 320px;
+  }
+  .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiAutocomplete-inputRoot.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root {
+    width: 348px;
+  }
+  .section3 input[type="submit"] {
+    margin-left: 0;
+  }
+  .css-11reh94-MuiGrid-root > .MuiGrid-item {
+    padding-top: 12px !important;
+  }
+  .section4 h2 {
+    font-size: 16px;
+    max-width: 377px;
+  }
+  .cartsummary {
+    width: 100%;
+  }
+  .summarycontent {
+    margin-left: 2px;
+  }
+  .progress {
+    margin-top: 100px;
+    left: 60px;
+  }
+  .summarygraph {
+    width: 100%;
+  }
+  .collegelocator ul {
+    right: 10px;
+  }
+  .collegelocator ul li:nth-child(3) {
+    margin-right: 33px;
+  }
+  .collegelocator {
+    margin-top: 135px;
+  }
+  .socialicon {
+    display: none;
+  }
+  .section3 h2 {
+    font-size: 20px;
+  }
+  .section3 h3 {
+    font-size: 22px;
+  }
+  .section3 h3.lefttext {
+    font-size: 18px;
+  }
+  .maincart {
+    flex-wrap: wrap;
+  }
 }
