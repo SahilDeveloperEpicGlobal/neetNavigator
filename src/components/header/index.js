@@ -1,20 +1,21 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import { Link } from "@mui/material";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmailIcon from "@mui/icons-material/Email";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
-
+import { Grid } from "@mui/material";
 import React from "react";
 
 function Header() {
   return (
-    <div className="mainheader">
-      <div className="logo">
-        <img src="/image/blue-logo-final 1.png" />
-      </div>
+    <Grid item xs={12} className="mainheader">
+      <Link href={"#"}>
+        <a>
+          <img src="/image/blue-logo-final 1.png" />
+        </a>
+      </Link>
       <div className="mainmenu">
         <ul>
           <li>
@@ -88,7 +89,7 @@ function Header() {
           </li>
         </ul>
       </div>
-    </div>
+    </Grid>
   );
 }
 

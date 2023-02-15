@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable no-undef */
 /* eslint-disable jsx-a11y/anchor-is-valid */
@@ -8,7 +9,6 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
 import EmailIcon from "@mui/icons-material/Email";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Paper from "@mui/material/Paper";
@@ -18,10 +18,8 @@ import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 import {
   Autocomplete,
   // Checkbox,
-  FormControlLabel,
   Grid,
   Link,
-  RadioGroup,
   Table,
   TableBody,
   TableCell,
@@ -34,6 +32,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import { Container } from "@mui/system";
 import { Label } from "@mui/icons-material";
 import Header from "./components/header";
+import Footer from "./components/footer";
 import GraphSidebar from "./components/graphsidebar";
 // import { Checkbox } from "@mui/material";
 // import Checkbox from "@mui/material/Checkbox";
@@ -75,17 +74,13 @@ const rowsNew = [
 function App() {
   return (
     <>
-     <Header />
       {/* <div className="section2">
     <h1>650</h1>
     <h1>Number of Medical </h1>
     <h1>colleges in <strong>India</strong></h1>
    </div> */}
-    <div>
-      <button  area-label="menu-icon" onClick={onClickManu}>
-      <MenuIcon size={30}/><p>Menue</p> </button>
-    </div>
       <Container>
+      <Header />
      <div className="mainsection">
      <div className="section1">
       <Grid container spacing={10}>
@@ -524,153 +519,7 @@ function App() {
       </div>
      </div>
       </Container>
-      <div className="footer">
-        <div className="container">
-          <div className="mainfooter">
-            <div className="footer1">
-              <img src="/image/blue-logo-final 1.png" />
-              <p>
-                NEET NAVIGATOR started in 2019 with advisory and training
-                services to institutional clients and in 2021 NEET NAVIGATOR
-                launched the personalized counselling services for
-                students/parents.{" "}
-              </p>
-              <h2>Address</h2>
-              <p>G-22/30, GF, Sector 7, Rohini, Delhi – 110085</p>
-              <h2>Connect with us</h2>
-              <ul>
-                <li className="emailicon">
-                  <Link href={"#"}>
-                    <a>
-                      <EmailIcon />
-                    </a>
-                  </Link>
-                </li>
-                <li className="whatsappicon">
-                  <Link href={"#"}>
-                    <a>
-                      <WhatsAppIcon />
-                    </a>
-                  </Link>
-                </li>
-                <li className="facebookicon">
-                  <Link href={"#"}>
-                    <a>
-                      <FacebookIcon />
-                    </a>
-                  </Link>
-                </li>
-                <li className="linkednicon">
-                  <Link href={"#"}>
-                    <a>
-                      <LinkedInIcon />
-                    </a>
-                  </Link>
-                </li>
-                <li className="instaicon">
-                  <Link href={"#"}>
-                    <a>
-                      <InstagramIcon />
-                    </a>
-                  </Link>
-                </li>
-                <li className="twittericon">
-                  <Link href={"#"}>
-                    <a>
-                      <TwitterIcon />
-                    </a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="footer2">
-              <h2>Important leads</h2>
-              <ul>
-                <li>
-                  <Link href={"#"}>
-                    <a>About Us</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"#"}>
-                    <a>College predictor</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"#"}>
-                    <a>About Medical colleges</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"#"}>
-                    <a>Medical Admission Counselling</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"#"}>
-                    <a>Success Stories</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"#"}>
-                    <a>Blogs</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"#"}>
-                    <a>Contact us</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="footer3">
-              <h2>Our Services</h2>
-              <ul>
-                <li>
-                  <Link href={"#"}>
-                    <a>Service1</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"#"}>
-                    <a>Service1</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"#"}>
-                    <a>Service1</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"#"}>
-                    <a>Service1</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"#"}>
-                    <a>Service1</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"#"}>
-                    <a>Service1</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"#"}>
-                    <a>Service1</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="lastfooter">
-        <div className="container">
-          <h3>© Copyright - NEET Navigator Educational Services </h3>
-        </div>
-      </div>
+    <Footer />
     </>
   );
 }

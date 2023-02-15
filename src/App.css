@@ -1,7 +1,7 @@
 .mainheader {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 .socialicon ul {
   display: flex;
@@ -471,8 +471,12 @@ table.countrynest1 {
 .css-1oqqzyl-MuiContainer-root {
   max-width: 1400px !important;
 }
+.section1 {
+  margin-top: 20px;
+}
 .mainsection {
   display: flex;
+  margin-top: 40px;
 }
 .section20 {
   position: sticky;
