@@ -2,7 +2,7 @@ import React from "react";
 
 function Checkbox() {
   return (
-    <div>
+    <div className="Checkbox">
       <input type="checkbox" />
     </div>
   );

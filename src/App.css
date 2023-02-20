@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .socialicon ul {
   display: flex;
@@ -683,6 +684,9 @@ table.countrynest1 {
   font-size: 13px;
   color: #fff;
   font-weight: 600;
+}
+.Checkbox {
+  display: flex;
 }
 .MuiFormControl-root.MuiTextField-root.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
   border-radius: 60px;
