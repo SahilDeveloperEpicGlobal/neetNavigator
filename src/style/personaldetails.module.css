@@ -1,0 +1,7 @@
+.loginsection1 span strong {
+  border: 1px solid blue;
+  background-color: blue;
+  padding: 3px 10px;
+  color: #fff;
+  border-radius: 30px;
+}

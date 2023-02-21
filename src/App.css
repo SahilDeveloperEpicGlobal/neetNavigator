@@ -54,6 +54,9 @@
   max-width: 1350px;
   margin: 0 auto;
 }
+.MuiFormGroup-root.css-dmmspl-MuiFormGroup-root {
+  display: block;
+}
 .section3 h1 {
   color: #858484;
   font-size: 26px;
@@ -593,8 +596,7 @@ table.countrynest1 {
   height: 100%;
   /* background-color: #f37c20 !important; */
   background: -webkit-linear-gradient(
-    left,
-    #06b025 0%,
+    /* left, */ #06b025 0%,
     #06b025 30%,
     #5faf6c 45%,
     #c5ddc6 50%,
@@ -603,8 +605,7 @@ table.countrynest1 {
     #06b025 100%
   );
   background: linear-gradient(
-    left,
-    #06b025 0%,
+    /* left, */ #06b025 0%,
     #06b025 30%,
     #5faf6c 45%,
     #c5ddc6 50%,

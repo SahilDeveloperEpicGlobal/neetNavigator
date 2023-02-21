@@ -38,6 +38,7 @@ function Register() {
                 <Link href={"#"}>SIGN IN</Link>
               </strong>
             </h3>
+            <input type={"submit"} value="Submit" />
             <img src="/image/w.jpeg" className={Styles.orimage} />
             <span>
               {" "}

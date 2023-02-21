@@ -6,6 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Register from "./pages/auth/register";
 import Login from "./pages/auth/login";
+import StudentDetails from "./pages/auth/studentdetails";
+import PersonalDetails from "./pages/auth/personaldetails";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -17,6 +19,8 @@ const RootApp = () => {
         <Route index path="/" element={<App />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/student-details" element={<StudentDetails />} />
+        <Route path="/personal-details" element={<PersonalDetails />} />
       </Routes>
     </BrowserRouter>
   );
