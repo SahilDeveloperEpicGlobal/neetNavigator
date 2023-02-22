@@ -8,11 +8,17 @@
   padding-bottom: 35px !important;
   box-shadow: 4px 2px 5px 1px #80808057;
 }
+.steper {
+  margin: 20px 0px 30px;
+}
 .maininput blockquote {
   margin: 0;
 }
 .maininput blockquote input {
   width: 270px !important;
+}
+.loginsection1 input {
+  width: 550px;
 }
 .loginsection1 h1 {
   text-align: center;
@@ -39,9 +45,6 @@ h2.personaltext {
   display: block;
   max-width: 270px;
 }
-.steper {
-  margin: 20px 0px 30px;
-}
 .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
   border-radius: 60px !important;
 }
@@ -62,6 +65,12 @@ h2.personaltext {
   display: block;
   font-weight: 600;
 }
+.loginsection1 input[type="submit"].backbutton {
+  background-color: #fff;
+  color: #1366ce;
+  border-color: #ffffff;
+  box-shadow: 2px 3px 8px 0px #80808080;
+}
 .MuiFormGroup-root.css-dmmspl-MuiFormGroup-root {
   display: block !important;
 }
@@ -69,8 +78,9 @@ h2.personaltext {
 @media (max-width: 500px) {
   .loginsection1 {
     transform: scale(0.6);
-    max-width: 620px !important;
-    margin: -65px !important;
-    margin-left: -40px !important;
+    max-width: 610px !important;
+    margin: -117px !important;
+    margin-left: -56px !important;
+    margin-bottom: -226px !important;
   }
 }

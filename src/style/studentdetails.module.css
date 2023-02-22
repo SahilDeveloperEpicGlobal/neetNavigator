@@ -18,6 +18,9 @@
   border-top-right-radius: 8px;
   margin: 0;
 }
+.loginsection1 blockquote {
+  margin: 0;
+}
 .loginsection1 img {
   width: 240px;
   padding-top: 10px;
@@ -56,4 +59,18 @@
 }
 .MuiFormGroup-root.css-dmmspl-MuiFormGroup-root {
   display: block !important;
+}
+
+@media (max-width: 500px) {
+  .loginsection1 h3 {
+    font-size: 15px;
+  }
+  .loginsection1 input[type="submit"] {
+    width: 206px;
+    font-size: 22px;
+    padding: 10px !important;
+  }
+  .loginsection1 h1 {
+    font-size: 18px;
+  }
 }

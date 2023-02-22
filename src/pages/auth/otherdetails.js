@@ -21,9 +21,9 @@ import { SelectChangeEvent } from "@mui/material/Select";
 import React from "react";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
-import Styles from "../../style/personaldetails.module.css";
+import Styles from "../../style/otherdetails.module.css";
 
-function PersonalDetails() {
+function OtherDetails() {
   const [age, setAge] = React.useState("");
 
   const handleChange = (event) => {
@@ -48,22 +48,20 @@ function PersonalDetails() {
         <h2 className={Styles.personaltext}>Student Details</h2>
         <Grid container spacing={10}>
           <Grid item xs={12} className={Styles.loginsection1}>
-            <h1>Personal Details </h1>
-            <img src="/image/Group172.png" />
+            <h1>Other Details</h1>
+            <img src="/image/undrawanalysis.png" />
             <span className={Styles.maininput}>
               <blockquote>
-                <h3>Address*</h3>
-                <TextField id="outlined-basic" variant="outlined" />
-              </blockquote>
-              <blockquote>
-                <h3>State*</h3>
+                <h3>NEET Category*</h3>
                 <Box sx={{ minWidth: 280 }}>
                   <FormControl fullWidth>
-                    <InputLabel id="demo-simple-select-label">State</InputLabel>
+                    <InputLabel id="demo-simple-select-label">
+                      NEET Category*
+                    </InputLabel>
                     <Select
                       labelId="demo-simple-select-label"
-                      id="demo-simple-select"
                       style={{ borderRadius: "60px" }}
+                      id="demo-simple-select"
                       value={age}
                       label="Age"
                       onChange={handleChange}
@@ -75,54 +73,18 @@ function PersonalDetails() {
                   </FormControl>
                 </Box>
               </blockquote>
-            </span>
-            <span className={Styles.maininput}>
               <blockquote>
-                <h3>City*</h3>
-                <Box sx={{ minWidth: 280 }}>
-                  <FormControl fullWidth>
-                    <InputLabel id="demo-simple-select-label">City</InputLabel>
-                    <Select
-                      labelId="demo-simple-select-label"
-                      id="demo-simple-select"
-                      style={{ borderRadius: "60px" }}
-                      value={age}
-                      label="City"
-                      onChange={handleChange}
-                    >
-                      <MenuItem value={10}>Ten</MenuItem>
-                      <MenuItem value={20}>Twenty</MenuItem>
-                      <MenuItem value={30}>Thirty</MenuItem>
-                    </Select>
-                  </FormControl>
-                </Box>
-              </blockquote>
-              <blockquote>
-                <h3>Pin Code*</h3>
-                <TextField id="outlined-basic" variant="outlined" />
-              </blockquote>
-            </span>
-            <span className={Styles.maininput}>
-              <blockquote>
-                <h3>DOB</h3>
-                <TextField
-                  id="outlined-basic"
-                  variant="outlined"
-                  value={"01/01/2020"}
-                />
-              </blockquote>
-              <blockquote>
-                <h3>Gender*</h3>
+                <h3>State Category*</h3>
                 <Box sx={{ minWidth: 280 }}>
                   <FormControl fullWidth>
                     <InputLabel id="demo-simple-select-label">
-                      Gender
+                      State Category*
                     </InputLabel>
                     <Select
                       labelId="demo-simple-select-label"
                       id="demo-simple-select"
-                      value={age}
                       style={{ borderRadius: "60px" }}
+                      value={age}
                       label="Age"
                       onChange={handleChange}
                     >
@@ -134,7 +96,51 @@ function PersonalDetails() {
                 </Box>
               </blockquote>
             </span>
+            <h3>Whether belongs to minority*</h3>
+            <TextField
+              id="outlined-basic"
+              style={{ margin: "0px 20px" }}
+              variant="outlined"
+              value={"Weather belongs to minority"}
+            />
+            <h3>Whether belongs to minority*</h3>
+            <FormControl>
+              <RadioGroup
+                aria-labelledby="demo-radio-buttons-group-label"
+                defaultValue="female"
+                name="radio-buttons-group"
+                style={{ margin: "0px 30px" }}
+              >
+                <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
+                <FormControlLabel value="No" control={<Radio />} label="No" />
+              </RadioGroup>
+            </FormControl>
+            <h3>Whether Belongs to Armed Force?</h3>
+            <FormControl>
+              <RadioGroup
+                aria-labelledby="demo-radio-buttons-group-label"
+                defaultValue="female"
+                name="radio-buttons-group"
+                style={{ margin: "0px 30px" }}
+              >
+                <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
+                <FormControlLabel value="No" control={<Radio />} label="No" />
+              </RadioGroup>
+            </FormControl>
+            <h3>Whether Eligible for ESIC quota seats?</h3>
+            <FormControl>
+              <RadioGroup
+                aria-labelledby="demo-radio-buttons-group-label"
+                defaultValue="female"
+                name="radio-buttons-group"
+                style={{ margin: "0px 30px" }}
+              >
+                <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
+                <FormControlLabel value="No" control={<Radio />} label="No" />
+              </RadioGroup>
+            </FormControl>
             <input type={"submit"} value="Next" />
+            <input type={"submit"} value="Back" className={Styles.backbutton} />
           </Grid>
         </Grid>
       </Container>
@@ -143,4 +149,4 @@ function PersonalDetails() {
   );
 }
 
-export default PersonalDetails;
+export default OtherDetails;

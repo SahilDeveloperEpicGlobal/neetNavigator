@@ -124,7 +124,7 @@
 @media (max-width: 1200px) {
   .loginsection {
     transform: scale(1.2);
-    margin-top: 170px;
-    margin-left: 180px;
+    margin-top: 170px !important ;
+    margin-left: 180px !important;
   }
 }

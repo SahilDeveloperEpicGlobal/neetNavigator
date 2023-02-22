@@ -8,6 +8,8 @@ import Register from "./pages/auth/register";
 import Login from "./pages/auth/login";
 import StudentDetails from "./pages/auth/studentdetails";
 import PersonalDetails from "./pages/auth/personaldetails";
+import EducationalDetails from "./pages/auth/educationaldetails";
+import OtherDetails from "./pages/auth/otherdetails";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -21,6 +23,8 @@ const RootApp = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/student-details" element={<StudentDetails />} />
         <Route path="/personal-details" element={<PersonalDetails />} />
+        <Route path="/educational-details" element={<EducationalDetails />} />
+        <Route path="/other-details" element={<OtherDetails />} />
       </Routes>
     </BrowserRouter>
   );

@@ -4,6 +4,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.maininput
+  .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiAutocomplete-inputRoot.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root {
+  width: 200px !important;
+}
 .socialicon ul {
   display: flex;
   flex-wrap: wrap;
@@ -699,9 +703,8 @@ table.countrynest1 {
 
 .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiAutocomplete-inputRoot.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root {
   border-radius: 60px;
-  width: 385px;
+  width: 300px;
 }
-
 @media (max-width: 500px) {
   .section2 h1 strong {
     font-size: 30px;
